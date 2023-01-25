@@ -1,0 +1,44 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "A collection of my test smart contracts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nawar-hisso/contracts.git"
+  },
+  "author": "Nawar Hisso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nawar-hisso/contracts/issues"
+  },
+  "homepage": "https://github.com/nawar-hisso/contracts#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "hardhat": "^2.12.6",
+    "@nomiclabs/hardhat-ethers": "^2.1.1",
+    "@openzeppelin/hardhat-upgrades": "^1.21.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "ethers": "^5.7.2",
+    "husky": "^7.0.4",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.24"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "coveralls": "^3.1.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "googleapis": "^110.0.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "moment": "^2.29.4",
+    "solhint": "^3.3.7"
+  }
+}
