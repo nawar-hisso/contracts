@@ -1,6 +1,8 @@
 require('@nomicfoundation/hardhat-toolbox');
 require('dotenv').config();
 
+require('./tasks/deploy.js');
+
 const { default: CONSTANTS } = require('./configs/constants.js');
 
 /** @type import('hardhat/config').HardhatUserConfig */
