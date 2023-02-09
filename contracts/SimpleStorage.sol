@@ -1,16 +1,29 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.14;
 
+/**
+ * @title Simple smart contract to Read / Wite data to chain
+ * @author Nawar Hisso
+ * @dev This contract implements basic `read` and `write` functions
+ */
 contract SimpleStorage {
-    // Variable to store data
+    /**
+     * @dev Variable to store data
+     */
     string private _data;
 
-    // Function to write data
+    /**
+     * @dev Function to write data to the `_data` variable
+     * @param data The data to be written
+     */
     function write(string memory data) public {
         _data = data;
     }
 
-    // Function to read data
+    /**
+     * @dev Function to read data from the `_data` variable
+     * @return string The stored data
+     */
     function read() public view returns (string memory) {
         return _data;
     }

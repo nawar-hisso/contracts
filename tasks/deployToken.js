@@ -5,13 +5,13 @@ require('dotenv').config();
 
 const { default: CONSTANTS } = require('../configs/constants.js');
 
-task('deploy', 'Deploy a new contract').setAction(async () => {
+task('deployToken', 'Deploy Token contract').setAction(async () => {
   try {
-    const contractName = 'SimpleStorage';
+    const contractName = 'Token';
     // eslint-disable-next-line no-undef
     const Contract = await ethers.getContractFactory(contractName);
 
-    const contract = await Contract.deploy();
+    const contract = await Contract.deploy(CONSTANTS.WALLET_ADDRESS);
 
     await contract.deployed();
     const data = {

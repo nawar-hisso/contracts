@@ -1,7 +1,8 @@
 require('@nomicfoundation/hardhat-toolbox');
 require('dotenv').config();
 
-require('./tasks/deploy.js');
+require('./tasks/deploySimpleStorage.js');
+require('./tasks/deployToken.js');
 
 const { default: CONSTANTS } = require('./configs/constants.js');
 
