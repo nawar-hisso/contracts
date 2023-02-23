@@ -3,6 +3,7 @@ require('dotenv').config();
 
 require('./tasks/deploySimpleStorage.js');
 require('./tasks/deployToken.js');
+require('./tasks/deployHasher.js');
 
 const { default: CONSTANTS } = require('./configs/constants.js');
 
